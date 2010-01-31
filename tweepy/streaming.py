@@ -114,9 +114,6 @@ class Stream(object):
                     break
                 conn.close()
                 sleep(self.snooze_time)
-            except Exception:
-                # any other exception is fatal, so kill loop
-                break
 
         # cleanup
         self.running = False
